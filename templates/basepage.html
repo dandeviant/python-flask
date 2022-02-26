@@ -14,6 +14,12 @@
 		</ul>
 	</nav>
 	<p>
+		{% if name %}
+		Hello {{name}}
+		{% else %}
+		Hello, no name
+		{% endif %}
+
 		{% block content %}{% endblock %}
 	</p>
 </body>
