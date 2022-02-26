@@ -9,7 +9,7 @@ app = Flask(__name__) # declare Flask object from flask library
 
 def home(name=None):
 	# Front page of Flask
-	return render_template('basepage.html', name=name)
+	return render_template('home.html', name=name)
 
 if __name__ == '__main__':
 	app.run(debug=True)
